@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reserve a table at Savory Elegance">
+    <title>Reservations | Savory Elegance</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reservations.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Savory<span>Elegance</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservations.html" class="active">Reservations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+ 
+    <section class="reservations-hero">
+        <div class="container">
+            <h1>Reserve Your Table</h1>
+            <p>Experience culinary excellence in our intimate dining room</p>
+        </div>
+    </section>
+ 
+    <section class="reservation-form-section">
+        <div class="container">
+            <div class="form-container">
+                <form id="reservationForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <select id="time" name="time" required>
+                            <option value="">Select Time</option>
+                            <option value="17:30">5:30 PM</option>
+                            <option value="18:00">6:00 PM</option>
+                            <option value="18:30">6:30 PM</option>
+                            <!-- More times -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Select</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <!-- More options -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="requests">Special Requests</label>
+                        <textarea id="requests" name="requests"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Reserve Now</button>
+                </form>
+                <div class="reservation-info">
+                    <h3>Hours & Information</h3>
+                    <p><strong>Dining Hours:</strong><br>
+                    Tuesday - Thursday: 5:30pm - 10:00pm
+                     Friday - Saturday: 5:00pm - 11:00pm
+                       Sunday: 5:00pm - 9:00pm
+                        Mondays: Closed</p>
+                    <p><strong>For large parties (6+):</strong><br>
+                    Please call (267) 74643397</p>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <footer>
+        <!-- Same footer as other pages -->
+    </footer>
+ 
+    <script src="js/main.js"></script>
+</body>
